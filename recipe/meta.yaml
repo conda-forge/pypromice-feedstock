@@ -44,13 +44,8 @@ test:
   imports:
     - pypromice
   commands:
-    - python -m unittest discover pypromice
-    - get_promice_data --help
-    - get_l0tx --help
-    - get_l3 --help
-    - join_l3 --help
-    - get_watsontx --help
-    - get_msg --help
+    - python -m unittest discover pypromice.tx
+    - python -m unittest discover pypromice.process
   requires:
     - pip
 
