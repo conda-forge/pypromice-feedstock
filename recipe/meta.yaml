@@ -37,6 +37,7 @@ requirements:
     - bottleneck
     - netcdf4
     - pydataverse
+    - eccodes
 
 test:
   imports:
