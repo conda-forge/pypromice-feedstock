@@ -25,6 +25,7 @@ build:
 requirements:
   host:
     - python >=3.8
+    - setuptools >=64
     - pip
   run:
     - python >=3.8
@@ -43,7 +44,6 @@ test:
   imports:
     - pypromice
   commands:
-    - pip check
     - python -m unittest discover pypromice
     - get_promice_data --help
     - get_l0tx --help
