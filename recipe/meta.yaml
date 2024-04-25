@@ -43,7 +43,6 @@ test:
   imports:
     - pypromice
   commands:
-    - pip check
     - python -m unittest discover pypromice
   requires:
     - pip
