@@ -43,7 +43,8 @@ test:
   imports:
     - pypromice
   commands:
-    - python -m unittest discover pypromice
+    - python -m unittest discover pypromice.tx
+    - python -m unittest discover pypromice.process
   requires:
     - pip
 
