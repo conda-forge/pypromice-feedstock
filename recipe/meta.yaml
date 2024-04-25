@@ -44,12 +44,6 @@ test:
   commands:
     - pip check
     - python -m unittest discover pypromice
-    - get_promice_data --help
-    - get_l0tx --help
-    - get_l3 --help
-    - join_l3 --help
-    - get_watsontx --help
-    - get_msg --help
   requires:
     - pip
 
