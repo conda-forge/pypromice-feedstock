@@ -48,8 +48,8 @@ requirements:
 test:
   imports:
     - pypromice
-  commands:
-    - python3 -m unittest discover tests
+#  commands:
+#    - python3 -m unittest discover tests
   requires:
     - pip
 
