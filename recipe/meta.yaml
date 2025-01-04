@@ -1,3 +1,4 @@
+{% set python_min = '3.10' %}
 {% set name = "pypromice" %}
 {% set version = "1.4.4" %}
 
@@ -6,7 +7,7 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
   sha256: cda83bc6c00d1e288133847dd19ce8c24d2e4b6d4a0e5bc31994a4b67a239683
 
 build:
@@ -25,15 +26,15 @@ build:
     - get_msg = pypromice.tx.get_msg:get_msg
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
-  number: 0
+  number: 1
 
 requirements:
   host:
-    - python >=3.10
+    - python {{ python_min }}
     - setuptools >=64
     - pip
   run:
-    - python >=3.10
+    - python >={{ python_min }}
     - numpy >=1.23.0
     - pandas >=1.5.0
     - xarray >=2022.6.0
@@ -52,6 +53,7 @@ test:
 #    - python3 -m unittest discover tests
   requires:
     - pip
+    - python {{ python_min }}
 
 about:
   home: https://github.com/GEUS-Glaciology-and-Climate/pypromice
