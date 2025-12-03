@@ -1,6 +1,6 @@
 {% set python_min = "3.10" %}
 {% set name = "pypromice" %}
-{% set version = "1.8.4" %}
+{% set version = "1.8.5" %}
 
 package:
   name: {{ name|lower }}
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 8869c0383b4fd27dd02527b56b9c7d117e25a763792812667fc8a7cf73fddec9
+  sha256: e567e9f2e05057710c32d2ad9e440647c1fcd87b50174f5ba98132e89d66d134
 
 build:
   entry_points:
