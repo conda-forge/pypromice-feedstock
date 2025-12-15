@@ -1,6 +1,6 @@
 {% set python_min = "3.10" %}
 {% set name = "pypromice" %}
-{% set version = "1.8.5" %}
+{% set version = "1.9.0" %}
 
 package:
   name: {{ name|lower }}
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: e567e9f2e05057710c32d2ad9e440647c1fcd87b50174f5ba98132e89d66d134
+  sha256: 80ea8fda294a80236acb2ba7fa2a5d84585c7d2d5415be7cbc410877e63188b0
 
 build:
   entry_points:
@@ -38,13 +38,19 @@ requirements:
     - numpy >=1.23.0
     - pandas >=1.5.0
     - xarray >=2022.6.0
+    - attrs
     - toml
     - scipy >=1.9.0
     - scikit-learn >=1.1.0
     - bottleneck
     - netcdf4
+    - pytest
     - eccodes
-
+    - google-auth
+    - google-auth-oauthlib
+    - google-auth-httplib2
+    - google-api-python-client
+    
 test:
   imports:
     - pypromice
