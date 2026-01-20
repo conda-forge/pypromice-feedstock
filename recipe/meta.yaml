@@ -1,6 +1,6 @@
 {% set python_min = "3.10" %}
 {% set name = "pypromice" %}
-{% set version = "1.9.0" %}
+{% set version = "1.9.1" %}
 
 package:
   name: {{ name|lower }}
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 80ea8fda294a80236acb2ba7fa2a5d84585c7d2d5415be7cbc410877e63188b0
+  sha256: 839b90653622af9ddb0d3ae17810ea3603e85e27ca90c6cfbcc9522e4293bd5d
 
 build:
   entry_points:
@@ -50,7 +50,7 @@ requirements:
     - google-auth-oauthlib
     - google-auth-httplib2
     - google-api-python-client
-    
+
 test:
   imports:
     - pypromice
