@@ -1,6 +1,6 @@
 {% set python_min = "3.10" %}
 {% set name = "pypromice" %}
-{% set version = "1.12.3" %}
+{% set version = "1.13.0" %}
 
 package:
   name: {{ name|lower }}
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://files.pythonhosted.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 647877abe6e8661934f0c0aa8095a507810cfb9c258b0bfd363382cb1046574e
+  sha256: b55d88911eaca207f9aecc1ffa151c2a403497012730375a602e648f2383a7f4
 
 build:
   entry_points:
